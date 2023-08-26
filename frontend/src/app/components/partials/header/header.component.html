@@ -1,0 +1,167 @@
+<div class="container">
+<nav class="navbar navbar-expand-lg navbar-light">
+  <!-- <a class="navbar-brand" routerLink="">e-education</a> -->
+  <img src="/assets/img/apple.png" alt="Logo" class="navbar-logo"> 
+   <a class="mob" routerLink=""><i class="fas fa-search"></i></a>
+    <a class="mob" routerLink="store"><i class="fas fa-store"></i></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+   
+  
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto justify-content-center">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="">Store <span class="sr-only">(current)</span></a>
+      </li>
+     
+      <li class="nav-item">
+        <a class="nav-link" routerLink="joinnow">Mac</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="about">Ipad</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="about">iphone</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="about">watch</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="about">Airpots</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="about">Tv&Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="about">Entertainment</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="about">Asscessories</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="about">Store</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink=""><i class="fas fa-search"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="store"><i class="fas fa-store"></i></a>
+      </li>
+      
+    </ul>
+  </div>
+</nav>
+</div>
+
+<header>
+  <div class="container">
+    
+    <a routerLink="/" class="logo">Mac Studio</a>
+    <nav class="navbar navbar-expand-lg navbar-light">
+ 
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+        <ul class="navbar-nav ml-auto justify-content-center">  
+          <li class="nav-item" *ngIf="!isAuth">
+            <a class="nav-link" routerLink="/login">Overview</a>
+          </li>
+          <li class="nav-item" *ngIf="!isAuth">
+            <a class="nav-link" routerLink="/login">TechSpace</a>
+          </li> 
+          <li class="nav-item" *ngIf="!isAuth">
+            <a class="nav-link" routerLink="/login">Compare</a>
+          </li>
+                
+          <li class="nav-item" *ngIf="!isAuth">
+            <a class="nav-link" routerLink="/login">login</a>
+          </li>
+          <li *ngIf="isAuth" class="menu-container">
+            <a routerLink="/dashboard">{{user.name}}</a>
+            <div class="menu">
+            <a routerLink="/profile">Profile</a>
+            <a routerLink="/orders">Orders</a>
+            <a (click)="logout()">Logout</a>
+          </div>
+          </li>
+          <li>
+            <a routerLink="/cart-page" class="buy-button">
+              Buy <span *ngIf="cartQuantity">{{cartQuantity}}</span>
+            </a>
+          </li>
+  
+           
+          
+          
+        </ul>
+      </div>
+      <a routerLink="/cart-page" class="buy-buttons">
+        Buy <span *ngIf="cartQuantity">{{cartQuantity}}</span>
+      </a>
+    </nav>
+
+   
+  </div>
+</header>
+<div class="container">
+
+  <h3 class="sub">Mac Studio</h3>
+  
+  </div>
+  <div class="container">
+    <h3 class="sub1">A true powerhouse.</h3>
+    </div>
+
+
+    <div class="container">
+      <img src="/assets/img/apple1.jpg" alt="Logo" class="apple1"> 
+    </div>
+
+
+    <div class="container">
+
+      <a class="sub3">From RM 9,499    |    Watch the event</a>
+      
+      </div>
+
+
+
+      <div class="container">
+        <h3 class="sub4">Stunningly compact.<br>
+          Extensive connectivity.<br>
+          Supercharged by<br>
+          M2 Max and M2 Ultra.</h3>
+        </div>
+
+
+        <div class="container">
+          <img src="/assets/img/apple2.jpg" alt="Logo" class="apple2"> 
+        </div>
+  
+        <div class="container1" style="background-color: black;">
+          <h3 class="sub5">Choose your<br>
+            superpower.<br>
+          </h3>
+        </div>
+
+        <div class="container1" style="background-color: black;">
+          <img src="/assets/img/apple3.jpg" alt="Logo" class="apple3">
+          <img src="/assets/img/apple4.jpg" alt="Logo" class="apple3"> 
+        </div>
+   
+        <div class="container">
+          <h3 class="sub6">Embraced by creative pros everywhere,<br>
+             Mac Studio now delivers next-generation<br>
+              power in the form of the lightning-fast M2 Max <br>
+              and the boundary-breaking M2 Ultra. It packs <br>
+               outrageous performance and extensive <br>
+                connectivity in an unbelievably compact form,<br>
+                 putting everything you need within easy reach  <br>
+                 and transforming any space into a studio.<br>
+          </h3>
+        </div>
